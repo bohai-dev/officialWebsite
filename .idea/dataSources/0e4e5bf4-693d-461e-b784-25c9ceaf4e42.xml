@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@101.132.236.43">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.8">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="WEBSITE">
+      <ObjectId>48</ObjectId>
+      <IntrospectionTimestamp>2018-11-13.17:06:46</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-11-13.01:07:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:25:18</ModifiedTimestamp>
+      <CommentsHash>23717192359308</CommentsHash>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>14</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>29</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <ObjectId>30</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="20" parent="2" name="COMPANY_USER_ID_SEQ">
+      <ObjectId>20064</ObjectId>
+      <CreatedTimestamp>2018-11-13.01:25:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:25:02</ModifiedTimestamp>
+      <SequenceIdentity>1..9999999999999999</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <sequence id="21" parent="2" name="CONTACT_US_ID_SEQ">
+      <ObjectId>20065</ObjectId>
+      <CreatedTimestamp>2018-11-13.01:25:18</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:25:18</ModifiedTimestamp>
+      <SequenceIdentity>1..9999999999999999</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <table id="22" parent="2" name="COMPANY_USER">
+      <ObjectId>20060</ObjectId>
+      <Comment>公司</Comment>
+      <CreatedTimestamp>2018-11-13.01:07:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:07:17</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="23" parent="2" name="CONTACT_US">
+      <ObjectId>20062</ObjectId>
+      <Comment>联系我们</Comment>
+      <CreatedTimestamp>2018-11-13.01:09:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:09:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="24" parent="22" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="22" name="USER_NAME">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="26" parent="22" name="PASSWORD">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="27" parent="22" name="UNIQUE_CODE">
+      <Position>4</Position>
+      <Comment>唯一标识码</Comment>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="28" parent="22" name="REMARK">
+      <Position>5</Position>
+      <Comment>备注</Comment>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="29" parent="22" name="CREATED_TIME">
+      <Position>6</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="30" parent="22" name="UPDATED_TIME">
+      <Position>7</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <index id="31" parent="22" name="SYS_C006997">
+      <ObjectId>20061</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-13.01:07:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:07:17</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="32" parent="22" name="SYS_C006997">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-13.01:07:17</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C006997</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="23" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="23" name="COMPANY_ID">
+      <Position>2</Position>
+      <Comment>公司ID区分</Comment>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="35" parent="23" name="CONTACT_USER">
+      <Position>3</Position>
+      <Comment>联系人</Comment>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="36" parent="23" name="CONTACT_PHONE">
+      <Position>4</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="37" parent="23" name="QQ_WECHAT">
+      <Position>5</Position>
+      <Comment>qq或微信或EMAIL</Comment>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="38" parent="23" name="CONTACT_DEATIL">
+      <Position>6</Position>
+      <Comment>咨询内容</Comment>
+      <DataType>VARCHAR2(1000 byte)|0s</DataType>
+    </column>
+    <column id="39" parent="23" name="READ_STATUS">
+      <Position>7</Position>
+      <Comment>是否已读，0未读1，1已读</Comment>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="40" parent="23" name="CREATED_TIME">
+      <Position>8</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="41" parent="23" name="UPDATED_TIME">
+      <Position>9</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <index id="42" parent="23" name="SYS_C006998">
+      <ObjectId>20063</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-13.01:09:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-13.01:09:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="23" name="SYS_C006998">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-13.01:09:43</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C006998</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -25,6 +25,13 @@ public class ContactUsMapperTest {
 	  System.out.println(result);
 	  
   }
+
+  @Test
+    public void generateIdTest(){
+      int id=contactUsMapper.generateId();
+      System.out.println("id="+id);
+
+  }
   
 	
 	

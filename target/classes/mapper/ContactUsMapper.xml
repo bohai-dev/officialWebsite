@@ -140,7 +140,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateReadStatus" parameterType="List">
-      update contact_us set read_status=1 , updated_time=now() where id in
+      update contact_us set read_status=1 , updated_time=sysdate where id in
       
       <foreach collection="list" item="id" separator="," open="(" close=")">
           #{id}   
